@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .main{
+          
+        height: 300px;
+        overflow-y: auto;
+
+      }
+
+      .main-table, th, td{
+        width: 100%;
+        border: 1px solid red;
+      }
+
+      .main-table tbody tr{
+        position: relative;
+      }
+
+     
+
+      .main .main-table .tool-bar{
+        position: absolute;
+        background: blue;
+        width: 0;
+        right: 0;
+        top: 0;
+
+        transition: 0.2s;
+      }
+
+      .show{
+        width: 600px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <table class="main-table">
+        <thead>
+          <th>ID</th>
+
+          <th>Name</th>
+
+          <th>Address</th>
+        </thead>
+
+        <tbody>
+          <tr onclick="showToolBar()">
+            
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+            <td>
+              <div class="tool-bar">
+              <i>icon</i>
+              <i>icon</i>
+              <i>icon</i>
+              <i>icon</i>
+            </div>
+          </td>
+          </tr>
+          <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+          </tr>
+          <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+          </tr>
+          <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+          </tr>
+          <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+          </tr>
+          <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+          </tr>
+          <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+          </tr>
+          <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+          </tr>
+          <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+          </tr>
+          <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+          </tr>
+          <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+          </tr>
+          <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+          </tr>
+          <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+          </tr>
+          <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+          </tr>
+          <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+          </tr>
+          <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+
+ 
+</html>
+
+<script type="text/javascript" >
+
+  function showToolBar(){
+    let elemento = document.querySelector(".tool-bar")
+    console.log('oi')
+    elemento.style.width = '600px' 
+  }
+
+</script>
+
+
